@@ -25,7 +25,9 @@ public enum CKMnemonicLanguageType {
 	}
 }
 
-enum CKMnemonicError: Error
+extension CKMnemonicLanguageType: CaseIterable { }
+
+public enum CKMnemonicError: Error
 {
 	case invalidStrength
 	case unableToGetRandomData
